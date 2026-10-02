@@ -1,7 +1,7 @@
 {
   "name": "pi-desktop",
   "version": "0.1.0",
-  "description": "A focused desktop interface for the Pi coding agent",
+  "description": "An independent desktop client for the Pi coding agent",
   "keywords": [
     "electron",
     "pi",
@@ -14,7 +14,7 @@
     "reload",
     "vite"
   ],
-  "homepage": "https://github.com/earendil-works/pi",
+  "homepage": "https://github.com/mknapper1/pi-crust",
   "license": "MIT",
   "author": "Crust contributors",
   "main": "./release/app/dist/main/main.js",
