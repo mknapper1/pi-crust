@@ -1,0 +1,7 @@
+// Run npm with Electron's embedded Node runtime so packaged Crust does not
+// depend on a login shell or the user's PATH.
+const path = require('node:path');
+
+const appPath = process.env.PI_DESKTOP_APP_PATH;
+if (!appPath) throw new Error('PI_DESKTOP_APP_PATH is not configured');
+require(path.join(appPath, 'node_modules', 'npm', 'bin', 'npm-cli.js'));

@@ -1,0 +1,19 @@
+{
+  "name": "pi-desktop",
+  "version": "0.1.0",
+  "description": "A focused desktop interface for the Pi coding agent",
+  "license": "MIT",
+  "author": "Crust contributors",
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ../../.erb/scripts/register.cjs ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ../../.erb/scripts/register.cjs ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "1.0.0",
+    "@earendil-works/pi-coding-agent": "1.0.0",
+    "jiti": "2.7.0",
+    "npm": "12.2.0"
+  }
+}
